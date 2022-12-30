@@ -133,6 +133,11 @@ func Provider() terraform.ResourceProvider {
 			"ucloud_cube_pod":               resourceUCloudCubePod(),
 			"ucloud_uk8s_cluster":           resourceUCloudUK8SCluster(),
 			"ucloud_uk8s_node":              resourceUCloudUK8SNode(),
+			"ucloud_keypair":                resourceUCloudKeyPair(),
+			"ucloud_iam_user":               resourceUCloudUser(),
+			"ucloud_iam_project":            resourceUCloudProject(),
+			"ucloud_iam_user_project_attach":resourceUCloudUserPoliciesAttach(),
+			"ucloud_route_table":            resourceUCloudRouteTable(),
 		},
 		ConfigureFunc: providerConfigure,
 	}
